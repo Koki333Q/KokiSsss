@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мобильная версия</title>
     <style>
-        /* Основные стили */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -14,7 +12,8 @@
         }
 
         .header {
-            background: url('logo.jfif');
+            background: url('logo.jfif') no-repeat center center;
+            background-size: cover;
             height: 90px;
             display: flex;
             justify-content: center;
@@ -58,7 +57,8 @@
         }
 
         .discount-card {
-            background: url('Chyrki.jfif');
+            background: url('Chyrki.jfif') no-repeat center center;
+            background-size: cover;
             height: 300px;
             width: 100%;
             max-width: 450px;
@@ -84,7 +84,7 @@
             margin: 5px 0;
         }
 
-        /* Медиазапросы для мобильных устройств */
+        
         @media (max-width: 768px) {
             .item {
                 width: 100%; /* Узкие экраны */
@@ -92,22 +92,22 @@
             }
 
             .search-bar {
-                width: 90%; /* Увеличиваем ширину строки поиска */
+                width: 90%;
             }
 
-            .discount-card {
-                max-width: 90%; /* Увеличиваем ширину карточки со скидкой */                height: 200px; /* Уменьшаем высоту карточки со скидкой */
+            .discount-card {                max-width: 90%;
+                height: 200px; /* Уменьшаем высоту карточки со скидкой */
             }
 
             .sidebar {
-                width: 100%; /* Полная ширина сайдбара */
+                width: 100%; 
             }
         }
 
         @media (max-width: 480px) {
             button {
-                width: 80px; /* Уменьшаем ширину кнопки на маленьких экранах */
-                height: 25px; /* Уменьшаем высоту кнопки на маленьких экранах */
+                width: 80px;
+                height: 25px;
             }
         }
     </style>
@@ -141,11 +141,11 @@
     <div class="discount-card">
         <h1>Скидка 25%</h1>
         <h2>ВСЕГО "1500тг ЗА 3 ИГРУШКИ</h2>
-        <h3>Скидка для покупки 3 игрушек сразу,</h3>
+        <h3 style="color black">Скидка для покупки 3 игрушек сразу,</h3>
         <button>Подробнее</button>
     </div>
 
-<div class="sidebar">
+    <div class="sidebar">
         <a href="Korzina.html">Корзина</a>
         <a href="Podterjka.html">Поддержка</a>
         <a href="vopros.html">Вопросы</a>
@@ -153,4 +153,3 @@
         <a href="Soo.html">Сообщения</a>
     </div>
 </body>
-</html>
